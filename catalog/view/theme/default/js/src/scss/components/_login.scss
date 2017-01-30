@@ -1,0 +1,25 @@
+.proceed {
+	a {
+		width: 50%;
+		display: block;
+		float: left;
+		padding: 25px;
+		text-align: center;
+		color: $color__mid;
+		.icon {
+			fill: $color__mid;
+			width: 150px;
+
+		}
+		&:hover {
+			color: $color__primary;
+			.icon {
+				fill: $color__primary;
+			}
+		}
+		.label {
+			display: block;
+			font-size: 1rem;
+		}
+	}
+}

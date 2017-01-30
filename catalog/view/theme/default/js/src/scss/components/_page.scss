@@ -1,0 +1,164 @@
+.page-header {
+	background-size: cover;
+	background-attachment: fixed; 
+	height: 65vh;
+	justify-content: center;
+	align-items: center;
+	.page-title {
+		font-size: 2.8rem;
+		position: relative;
+		color: #fff;
+		z-index: 100;
+		color: $color__primary;
+		span {
+			position: relative;
+			z-index: 100;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+				top: -30px;
+				right: -70px;
+				bottom: -30px;
+				left: -70px;
+			background: rgba(0,0,0, 0.8);
+			transform: skew(-15deg);
+		}
+	}
+}
+.page-section {
+	padding: 70px 0;
+	h3 {
+		font-family: $font__main;
+		font-size: 1.8rem;
+		margin-bottom: 0.5em;
+	}
+	li {
+		margin-bottom: 10px;
+	}
+	.img {
+		margin-top: 65px;
+	}
+}
+.section-header {
+	margin-bottom: 25px;
+	.heading {
+		margin-bottom: 5px;
+	}
+}
+.heading {
+	font-size: 3rem;
+	text-align: center;
+	color: $color__primary;
+}
+.sub-heading {
+	text-align: center;
+	font-size: 1.4rem;
+	color: $color__primary;
+	text-transform: uppercase;
+	font-weight: bold;
+	.icon {
+		width: 20px;
+		vertical-align: -3px;
+		fill: $color__primary;
+		margin: 0 7px;
+	}
+}
+.section-title {
+	color: $color__primary;
+	font-size: 2.4rem;
+	position: relative;
+	padding: 15px 0;
+	&::after {
+		content: '';
+		width: 60px;
+		height: 4px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: $color__primary;
+	}
+}
+.entry-title {
+	color: $color__primary;
+	font-size: 2.6rem;
+	margin-bottom: 15px;
+}
+.entry-meta {
+	color: #777;
+	.icon {
+		width: 20px;
+		vertical-align: -5px;
+		margin-right: 4px;
+		fill: #777;
+	}
+}
+.section-1 {
+	background: #18181a;
+}
+.section-2 {
+	background: #202021;
+}
+.section-3 {
+	background: #2a2a2b;
+	padding: 0;
+	.l-center > div {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	.col-4-1 {
+		background: #252526;
+		position: relative;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			right: 98%;
+			width: 400%;
+			height: 100%;
+			top: 0;
+			background: #252526;
+		}
+	}
+}
+.section-4 {
+	background: #111;
+}
+.section-contact-form {
+	background: #1e1e21;
+	p {
+		margin-bottom: 15px;
+	}
+	.contact-form {
+		.input-2 {
+			input {
+				width: 32%;
+			}
+		}
+	}
+	textarea, .input-2 {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.col-4-1 {
+		border-left: 1px solid #2a2a2a;
+	}
+}
+.featured-phone {
+	background: $color__primary;
+	display: inline-block;
+	padding: 7px 15px;
+	font-weight: bold;
+	font-size: 1.4rem;
+	color: #333;
+	transform: skew(-15deg);
+	.icon {
+		width: 25px;
+		padding: 4px;
+		vertical-align: -4px;
+		margin-right: 7px;
+		fill: $color__primary;
+		background: #333;
+		border-radius: 3px;
+	}
+}

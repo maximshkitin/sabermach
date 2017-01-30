@@ -1,0 +1,211 @@
+.popup-wrap {
+	position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.overlay {
+		background: rgba(#000, 0.7);
+		position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		animation-name: fadeIn;
+		animation-duration: 0.5s;
+	}
+	.popup-container {
+		animation-name: showup;
+		animation-duration: 0.5s;
+		//animation-delay: 0.5s;
+		position: relative;
+		&.fadeOut {
+			opacity: 0;
+			animation-name: fadeOutLeft;
+			animation-duration: 0.7s;
+		}
+	}
+	.popup-content {
+		background: linear-gradient(to bottom, #2a2b2a 0, #161616 100%);
+		clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+		width: 500px;
+		max-width: 100%;
+		&::after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+		.title {
+			color: $color__primary;
+			border-bottom: 1px solid #333;
+			margin-bottom: 25px;
+			h1 {
+				font-family: $font__main;
+				border-bottom: 1px solid #151515;
+				text-transform: uppercase;
+				margin: 0;
+				padding-bottom: 15px;
+			}
+			.icon {
+				fill: $color__primary;
+				width: 30px;
+				vertical-align: -4px;
+			}
+		}
+		.form-wrap {
+			padding: 70px 45px 20px;
+		}
+	}
+	.form-footer {
+		width: 100%;
+		.info {
+			width: 50%;
+			float: left;
+		}
+		.submit {
+			width: 50%;
+			float: left;
+			text-align: right;
+		}
+		.link {
+			text-transform: uppercase;
+			display: block;
+		}
+	}
+	button[type="submit"] {
+		font-size: 1.2rem;
+		background: rgba($color__background, 0.4);
+		display: inline-block;
+		padding: 10px 35px;
+		margin-bottom: 15px;
+		letter-spacing: 4px;
+		font-weight: bold;
+		clip-path: polygon(7% 0, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
+		color: #fff;
+		border: 0;
+		font-family: $font__heading;
+		text-transform: uppercase;
+		&:hover {
+			background: linear-gradient(0deg, $color__primary-dark 0%, $color__primary-dark 49%, $color__primary 50%)
+		}
+	}
+	.social-login {
+		padding: 20px 45px 90px;
+		background: #111213;
+		float: left;
+		width: 100%;
+		.label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		button {
+			width: 48%;
+			border: 0;
+			border-radius: 4px;
+			box-shadow: 0 2px 7px #000;
+			padding: 5px 0 2px;
+			.icon {
+				fill: #fff;
+				width: 30px;
+			}
+			&.facebook {
+				background: #343f69;
+				float: left;
+			}
+			&.googleplus {
+				float: right;
+				background: #bc422b;
+			}
+		}
+	}
+	.x {
+		display: block;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+			top: 7%;
+			right: -5px;
+		border-radius: 70px;
+		padding: 4px;
+		background: #777;
+		&::hover {
+			background: $color__primary;
+		}
+		.icon {
+			width: 22px;
+			fill: #000;
+		}
+	}
+	.continue-shopping {
+		text-align: center;
+		border-top: 1px solid #444;
+		float:left;
+		width: 100%;
+		padding: 15px 0;
+		a {
+			color: $color__primary;
+			display: inline;
+			float: none;
+			padding: 0;
+		}
+	}
+}
+
+.toast {
+	position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation-name: showup;
+	animation-duration: 0.5s;
+	&.fadeOut {
+		animation-name: fadeOut;
+		animation-duration: 0.5s;
+		opacity: 0;
+	}
+	.message {
+		background: rgba(0,0,0,0.8);
+		color: $color__primary;
+		padding: 25px 45px;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		border-radius: 5px;
+		.icon {
+			width: 35px;
+			fill: #000;
+			background: $color__primary;
+			border-radius: 25px;
+			padding: 5px;
+			vertical-align: -7px;
+			margin-right: 8px;
+		}
+	}
+}
+
+@keyframes showup {
+    0%   {transform: scale(0);}
+    100%   {transform: scale(1);}
+}
+
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    100%   {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0%   {opacity: 1;}
+    100%   {opacity: 0;}
+}
+
+@keyframes fadeOutLeft {
+    0%   {opacity: 1; transform: translateX(0)}
+    100%   {opacity: 0; transform: translateX(-100%)}
+}

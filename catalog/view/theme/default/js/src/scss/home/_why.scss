@@ -1,0 +1,118 @@
+.hide {
+	opacity: 0 !important;
+	pointer-events: none;
+}
+.fixed {
+	position: fixed !important;
+}
+.section-why {
+	background: url('images/backline.svg') center center;
+	background-size: 100% auto;
+	overflow: hidden;
+	.why-intro {
+		width: 40%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		transform: translateX(-100%);
+		position: absolute;
+			top: 0;
+			left: 0;
+		.title, p {
+			width: 60%;
+		}
+		.title {
+			font-size: 2.5rem;
+			margin-top: 0;
+			letter-spacing: 3px;
+		}
+		p {
+			font-size: 1.4rem;
+			color: $color__mid;
+		}
+	}
+	.why-saber {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		text-align: center;
+		.saber-photo {
+			transform: rotate(-90deg) translateX(-400px);
+		}
+	}
+	.why-list {
+		width: 40%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 100px;
+		position: absolute;
+			top: 0;
+			right: 0;
+		background: $color__primary-saturated;
+		transform: translateX(100%);
+		ul {
+			list-style: none;
+			color: $color__primary-light;
+			width: 80%;
+			padding: 0;
+		}
+		li.active {
+			color: #fff;
+			.icon {
+				fill: #fff;
+			}
+			.why-description {
+				display: block;
+			}
+		}
+		.why-title {
+			font-size: 1.8rem;
+			.icon {
+				width: 20px;
+				fill: $color__primary-light;
+				margin-right: 10px;
+			}
+		}
+		.why-description {
+			margin-left: 10px;
+			margin-bottom: 25px;
+			border-left: 1px solid #fff;
+			padding-left: 20px;
+			font-size: 1.4rem;
+			color: #fff;
+			display: none;
+		}
+	}
+	.do-action-text { 
+		opacity: 0;
+	}
+}
+
+.do-action-text {
+	width: 100%;
+	color: $color__primary;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	position: absolute;
+	bottom: 7%;
+	left: 0;
+	.title {
+		font-size: 2.8rem;
+		color: #fff;
+		text-transform: none;
+		letter-spacing: 3px;
+	}
+	.icon {
+		width: 20px;
+		fill: $color__primary;
+		margin: 0 10px;
+		display: inline-block;
+		vertical-align: -4px;
+	}
+}

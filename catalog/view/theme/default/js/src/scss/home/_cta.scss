@@ -1,0 +1,46 @@
+.section-cta {
+	background: linear-gradient(135deg,  $color__primary-dark-saturated 0%, $color__primary 38%, $color__primary-dark-saturated 73%, $color__primary 100%);
+	height: 100px;
+	width: 100%;
+	padding: 22px 0;
+	margin-top: -50px;
+	position: relative;
+	z-index: 100;
+	transform: translateY(100%);
+	transition: transform 1s;
+	transition-delay: 0.5s;
+	&.active {
+		transform: translateY(0);
+	}
+	.btn-store {
+		text-transform: uppercase;
+		font-family: $font__heading;
+	}
+	.call-to-action {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $color__dark-brown;
+		float: left;
+		font-size: 2rem;
+		.icon {
+			width: 30px;
+			vertical-align: -4px;
+			fill: $color__dark-brown;
+		}
+	}
+	.btn-store {
+		background: #000;
+		color: #fff;
+		display: inline-block;
+		padding: 10px 25px;
+		font-size: 1.4rem;
+		float: right;
+		clip-path: polygon(7% 0, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
+		.icon {
+			fill: #fff;
+			width: 25px;
+			vertical-align: -4px;
+			margin-right: 5px;  
+		}
+	}
+}

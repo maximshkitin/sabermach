@@ -1,0 +1,107 @@
+.checkout-calculator {
+	.items {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.item {
+		width: 100%;
+		padding: 15px 0 25px;
+		border-bottom: 1px solid #333;
+		position: relative;
+	}
+	.item-content {
+		display: flex;	
+		justify-content: space-between;	
+	}
+	.item-description {
+		text-align: left;
+		padding: 0 15px;
+		width: 50%;
+		span {
+			display: block;
+		}
+	}
+	.item-photo {
+		width: 85px;
+		height: 85px;
+		border-radius: 5px;
+		border: 2px solid rgba(#777, 0.7);
+	}
+	.item-series {
+		text-transform: uppercase;
+		color: $color__mid;
+		font-size: 0.8rem;
+	}
+	.item-hilt {
+		color: $color__primary;
+		font-size: 1.6rem;
+		font-weight: bold;
+	}
+	.item-colours {
+		color: #555;
+		font-size: 1.4rem;
+	}
+	.item-quantity {
+		width: 85px;
+		input {
+			font-weight: bold;
+			text-align: center;
+			font-size: 1.2rem;			
+		}
+	}
+	.item-total {
+		width: 80px;
+		padding: 4px 0;
+		font-size: 1.6rem;
+		text-align: right;
+	}
+	.remove-item {
+		position: absolute;
+		bottom: 10px;
+		right: 0;
+		color: $color__primary;
+		padding: 7px 0;
+		.icon {
+			width: 20px;
+			fill: $color__primary;
+			vertical-align: -3px;
+		}
+	}
+	.order-sub-totals {
+		width: 100%;
+		margin: 25px 0;
+		tbody {
+			th {
+				text-align: left;
+				max-width: 300px;
+				overflow: hidden;
+				&::after {
+					content: '................................................................................................';
+					margin-left: 7px;
+					color: #333;
+				}			
+			}
+			td {
+				text-align: right;
+				padding: 7px;
+			}
+		}
+	}
+	.order-total {
+		width: 100%;
+		margin-bottom: 45px;
+		th, td {
+			font-size: 1.8rem;
+			font-weight: normal;
+			text-transform: uppercase;
+			color: $color__primary;
+		}
+		th {
+			text-align: left;
+		}
+		td {
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+.col-left {
+	width: 40%;
+	padding-right: 45px;
+	text-align: center;
+	.title {
+		text-align: center;
+		margin-bottom: 30px;
+		.action {
+			color: $color__primary;
+			font-weight: bold;
+			font-size: 1.4rem;
+			text-transform: uppercase;
+		}
+		.icon {
+			fill: $color__primary;
+			width: 20px;
+			margin: 0 10px;
+		}
+		.logo-sm {
+			display: block;
+			font-size: 2.8rem;
+			font-family: $font__heading;
+			transform: skew(-15deg);
+		}
+	}
+	.saber {
+		.saber-photo {
+			display: inline-block;
+			transform: rotate(25deg);
+			width: 48px;
+			height: 500px;
+			background: url('images/saber-flipped.png') no-repeat center center;
+			background-size: auto 100%;
+		}		
+	} 
+	.options-selected {
+		color: $color__primary;
+		display: inline-block;
+		.sounds, .colors {
+			display: inline-block;
+			padding: 10px 0;
+			margin-right: 10px;
+			text-transform: uppercase;
+		}
+		.icon {
+			fill: $color__primary;
+			width: 20px;
+			vertical-align: -5px;
+		}
+	}
+	.saber-footer {
+		border-top: 1px solid #333;
+		font-size: 0.9rem;
+		color: #777;
+		padding: 15px 0;
+		display: inline-block;
+		.icon {
+			width: 20px;
+			display: inline-block;
+			fill: #777;
+			vertical-align: -5px;
+		}
+		strong {
+			color: #aaa;
+		}
+	}
+}

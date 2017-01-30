@@ -1,0 +1,101 @@
+.home-section {
+	min-height: 100vh;
+	position: relative;
+}
+.section-intro {
+	background: url('images/background-intro.svg') no-repeat center center;
+	background-size: cover;
+	background-position: fixed;
+	text-align: center;
+	.sabermach-title {
+		position: fixed;
+		width: 100%;
+		bottom: 30%;
+		left: 0;
+		font-weight: normal;
+		font-size: 1.8rem;
+		h1 {
+			margin: 0 0 10px;
+			line-height: 1;
+			transform: skewX(-7deg);
+		}
+		span {
+			display: inline-block;
+		}
+		.slogan {
+			text-shadow: 0 0 20px rgba(#fff, 0.6);
+		}
+	}
+	.scroll-to-start {
+		position: absolute;
+		bottom: 5%;
+		width: 100%;
+		font-family: $font__heading;
+		text-transform: uppercase;
+	}
+	.action-label {
+		font-size: 1.8rem;
+		background: rgba($color__background, 0.4);
+		display: inline-block;
+		padding: 10px 35px;
+		margin-bottom: 15px;
+		letter-spacing: 4px;
+		clip-path: polygon(7% 0, 93% 0%, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
+		color: #fff;
+		&:hover {
+			background: linear-gradient(0deg, $color__primary-dark 0%, $color__primary-dark 49%, $color__primary 50%)
+		}
+	}
+	.description-label {
+		display: block;
+		letter-spacing: 2px;
+	}
+	.saber-image {
+		pointer-events: none;
+	}
+}
+
+.saber-image {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		z-index: 200;
+		.saber-container {
+			display: inline-block;
+			position: relative;
+		}
+		.saber-photo {
+			display: inline-block;
+			width: 124px;
+			height: 1500px;
+			background: url('images/saber-sprite.png') no-repeat 0 0;
+		}
+		img {
+			z-index: 100;
+			position: relative;
+		}
+		.glow-blue {
+			background: rgba(#19e0e2, 0.5);
+			width: 500px;
+			border-radius: 15px;
+			height: 40px;
+			filter: blur(25px);
+			mix-blend-mode: screen;
+			position: absolute;
+				top: 15px;
+				right: 0;
+		}
+		.glow-purple {
+			background: rgba(#ff00ff, 0.3);
+			width: 350px;
+			border-radius: 50%;
+			height: 200px;
+			filter: blur(45px);
+			mix-blend-mode: screen;
+			position: absolute;
+				top: -60px;
+				right: 65px;
+		}
+	}

@@ -1,0 +1,105 @@
+ul.tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: $color__primary;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    z-index: 100;
+    &::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+    li {
+        float: left;
+        width: 33.33%;
+        &:first-child a {
+            border-radius: 5px 0 0 0;
+        }
+        &:last-child a {
+            border-radius: 0 5px 0 0;
+            border: 0;
+        }
+        a {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: bold;
+            border-right: 2px solid rgba(0,0,0,0.2); 
+            &:hover {background-color: $color__primary-dark;}
+        }
+    }
+    a:focus, .active {
+        background-color: $color__primary-dark;
+    }
+    .active {
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: $color__primary-dark;
+            top: 90%;
+            left: 50%;
+            transform: rotate(45deg) translateX(-50%);
+        }
+    }
+}
+.tab-content {
+    display: none;
+    padding: 35px 25px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background: #1a1a1a;
+    border: 1px solid #0a0a0a;
+    &::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+.tab-footer {
+    border-top: 1px solid #222;
+    float: left;
+    width: 100%;
+    padding: 15px 0 0;
+    color: #777;
+    font-size: 1rem;
+    .icon {
+        width: 45px;
+        fill: #333;
+        margin-right: 15px;
+        display: block;
+        float: left;
+    }
+}
+.paypal-checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.paypal-btn {
+    background: #ffc439;
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: #333;
+    font-weight: bold;
+    &:hover {
+        color: #333;
+        background: darken(#ffc439, 7);
+    }
+    img {
+        vertical-align: -12px;
+        margin-left: 7px;
+    }
+}
