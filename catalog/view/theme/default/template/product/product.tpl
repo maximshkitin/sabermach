@@ -59,9 +59,12 @@
 							<ul class="clearfix">
 							<?php foreach ($hilts as $hilt) :?>
 								<li data-hilt_options_id="bxslider_wrap_<?php echo $hilt['option_value_id']?>">
+									<div class="tooltip">Click to View</div>
 									<div class="img">
 										<div class="cell">
-											<img src="<?php echo $hilt['image'];?>" alt="<?php echo htmlspecialchars($hilt['name']);?>">
+											<div class="img-blur">
+												<img src="<?php echo $hilt['image'];?>" alt="<?php echo htmlspecialchars($hilt['name']);?>">
+											</div>
 										</div>
 									</div>
 									<span><?php echo $hilt['name'];?></span>
@@ -115,7 +118,8 @@
 					<a class="polygon-button yellow" href="<?php echo $category->url.'#product-'.$product_id;?>">
 					<?php if ($price): ?>
 					<?php if (!$special) : ?>
-						<span><?php echo $price; ?></span>
+						<span class="default-price hilt-price active"><?php echo $price; ?></span>
+						<span class="kyrotek-price hilt-price">777$</span>
 					<?php else : ?>
 						<span><?php echo $special; ?></span>
 					<?php endif;?>
@@ -331,8 +335,8 @@
 		$('.bxslider').bxSlider({
 			mode: 'fade',
 	        pager: true,
-	        nextText:'<i class="fa fa-chevron-right"></i>',
-	        prevText:'<i class="fa fa-chevron-left"></i>'
+	        nextText:'<i class="fa fa-angle-right"></i>',
+	        prevText:'<i class="fa fa-angle-left"></i>'
 		});
 	});
 </script>

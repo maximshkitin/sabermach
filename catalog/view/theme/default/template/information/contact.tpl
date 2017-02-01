@@ -12,6 +12,9 @@
         <?php endif;?>
       </div>
       <div class="col-3-2">
+        <div class="contact-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/uiLKT5rPHBA?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
         <h2 class="section-title"><?php echo $about->title;?></h2>
         <?php echo $about->description;?>
       </div>

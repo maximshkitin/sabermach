@@ -97,6 +97,12 @@ $(document).ready(function(){
 			$(this).find('.fa').removeClass('fa-caret-down').addClass('fa-caret-right');
 		}
 	});
+	$('.home-pop-up .close-btn').click(function(){
+		$('.home-pop-up').fadeOut(300);
+		setTimeout(function(){
+			$('.home-pop-up').remove();
+		},300);
+	});
 	$('.expand-all').click(function(){
 		var len = $('.categories > li').length;
 		var flag = false;
@@ -174,8 +180,14 @@ $(document).ready(function(){
 			}
 		}	
 	}
-
+	if ($('body').hasClass('store')) {
+		if ($(window).height() < 650) {
+			$('#saber-photo').addClass('small');
+		}
+	}
 	$('.choose-series-radio').on('click', function(){
+		$('#button-next').addClass('inactive-btn');
+		$('#saber-color').removeClass('expanded done');
 		var id = '#' + $(this).attr('id');
 		var ex = $(this).data('product');
 		$('.choose-hilt').find('ol').addClass('hidden');
@@ -192,9 +204,12 @@ $(document).ready(function(){
 
 	$('.choose-hilt-radio').click(function(){
 		var newImg = $(this).data('image');
-		console.log(newImg);
 		if (newImg != undefined)
 			$('#saber-photo').css('backgroundImage', 'url("' + newImg + '")');
+	});
+
+	$('.choose-color-radio').click(function(){
+		$('#button-next').removeClass('inactive-btn');
 	});
 
 

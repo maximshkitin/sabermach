@@ -12,18 +12,15 @@
             <use xlink:href="catalog/view/theme/default/icons/sprite.svg#icon_shine"></use>
           </svg>
         </span>
-        <span class="logo-sm"><?php echo $name;?></span>
+        <span class="logo-sm logo-style"><?php echo $name;?></span>
       </div>
-      <div class="saber">
-        <div id="saber-photo" class="saber-photo">
-          <div class="saber-kernel">
-            <img src="" alt="">
-          </div>
-          <div class="saber-hilt">
-            <img src="" alt="">
+      <a href="#" data-featherlight="http://sabermach.dev/image/catalog/hilts/store/Incognitor.png">
+        <div class="saber">
+          <i class="fa fa-search-plus"></i>
+          <div id="saber-photo" class="saber-photo">
           </div>
         </div>
-      </div>
+      </a>
       <div class="options-selected">
         <div id="sounds" class="sounds">
           <svg viewBox="0 0 150 150" class="icon icon-sound">
@@ -186,19 +183,18 @@
         <div class="button-wrap">
           <button class="btn btn--transparent <?php echo $not_logged; ?>" type="button" id="button-cart">
             <div class="border"></div>
-            <span class="text">Add to Cart</span>
-          </button>
-          <span class="label">add item to cart and continue shopping</span>
-        </div>
-
-        <div class="button-wrap">
-          <button type="button" id="button-cart-checkout" class="btn <?php echo $not_logged; ?>">
             <svg viewBox="0 0 150 150" class="icon icon-shopping">
               <use xlink:href="catalog/view/theme/default/icons/sprite.svg#icon_shopping"></use>
             </svg>
-            Checkout
+            <span class="text">Add to Cart</span>
           </button>
-          <span class="label">add item to cart and checkout</span>
+        </div>
+        
+        <div class="button-wrap">
+          <button class="btn inactive-btn btn--transparent <?php echo $not_logged; ?>" type="button" id="button-next">
+            <div class="border"></div>
+            <span class="text">Next</span>
+          </button>
         </div>
       </div>
     </div>

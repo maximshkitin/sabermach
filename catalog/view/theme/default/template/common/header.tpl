@@ -104,7 +104,6 @@ foreach ($replace as $key => $value) {
 			                	<a href="<?php echo $first['href']; ?>">
 			                	<?php if(count($first['name']) > 1) :?>
 			                	  <?php echo reset($first['name']);?><br />
-			                	  <span><?php echo end($first['name']);?></span>
 			                	  <i class="fa fa-chevron-right"></i>
 			                	<?php else :?>
 			                	  <?php echo reset($first['name']);?>
@@ -116,7 +115,6 @@ foreach ($replace as $key => $value) {
 				<?php if($products['second']) : ?>
                   <li class="has-submenu">
                     <a href="javascript:void(0);">Premium<br>
-                      <span>Series</span>
                       <i class="fa fa-chevron-right"></i></a>
                       <ul class="clearfix">
                       	<?php foreach ($products['second'] as $second) : ?>
@@ -140,7 +138,7 @@ foreach ($replace as $key => $value) {
 
               </li>
               <li class="bg-li cart">
-                <a href="http://staging.sabermach.com/checkout">Cart                                </a>
+                <a href="http://staging.sabermach.com/checkout">Cart</a>
               </li>
               <li class="dd-menu">
                 <span></span>
@@ -169,6 +167,12 @@ foreach ($replace as $key => $value) {
                     <a href="http://staging.sabermach.com/contacts#faq">
                       <i class="fa fa-question-circle"></i>
                       <span>FAQ</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://staging.sabermach.com/media">
+                      <i class="fa fa-film"></i>
+                      <span>Media</span>
                     </a>
                   </li>
                                     <li>

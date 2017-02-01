@@ -7,8 +7,8 @@
     </div>
     <div class="sabermach-title">
         <h1>
-            <span class="to-left">Saber</span>
-            <span class="to-right">Mach</span>
+            <span class="to-left logo-style">Saber</span>
+            <span class="to-right logo-style">Mach</span>
         </h1>
         <?php if(!empty($slogan)):?>
         <div class="slogan">
@@ -41,6 +41,38 @@
     </div>
 </section>
 <?php echo $content_bottom;?>
+<div class="home-pop-up">
+    <div class="close-btn">x</div>
+    <div class="pop-heading tac">
+        Promotions
+    </div>
+    <div class="pop-up-content">
+        <ul class="bxslider">
+            <li>
+                    <div class="col-md-6 col-sm-6 col-lg-5 col-xs-12">
+                        <img src="catalog/view/theme/default/img/pop-1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-7 col-xs-12">
+                        <div class="pop-heading tac">
+                            New Edition!!!
+                        </div>
+                        <div class="text-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus animi nostrum adipisci, non numquam error, cumque dolore iure eius commodi rerum alias aliquam repellat quasi autem est. Ipsam cum eveniet eius maiores dolorum dolore recusandae. Fugiat a quam, impedit laboriosam provident ad! Deserunt iste ad reiciendis voluptatem nemo molestias dicta architecto totam suscipit soluta inventore accusantium, harum tempore atque, ratione dolorem dolor, iusto quisquam natus ipsum magni perspiciatis enim delectus. Nemo reiciendis in a, natus suscipit beatae temporibus, commodi eveniet ullam, ad obcaecati quisquam nostrum laboriosam deleniti corporis. Vitae, odio. Reprehenderit est magni facilis consequatur minus libero, aspernatur doloribus aliquam beatae provident dolorem eligendi recusandae, distinctio amet pariatur molestiae neque non, 
+                        </div>
+                    </div>
+            </li>
+            <li>
+                <img src="catalog/view/theme/default/img/pop-2.jpg" alt="">
+                <div class="pop-heading">
+                    New Edition!!!
+                </div>
+                <div class="text-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus animi nostrum adipisci, non numquam error, cumque dolore iure eius commodi rerum alias aliquam repellat quasi autem est. Ipsam cum eveniet eius maiores dolorum dolore recusandae. Fugiat a quam, impedit laboriosam provident ad! Deserunt iste ad reiciendis voluptatem nemo molestias dicta architecto totam suscipit soluta inventore accusantium, harum tempore atque, ratione dolorem dolor, iusto quisquam natus ipsum magni perspiciatis enim delectus. Nemo reiciendis in a, natus suscipit beatae temporibus, commodi eveniet ullam, ad obcaecati quisquam nostrum laboriosam deleniti corporis. Vitae, odio. Reprehenderit est magni facilis consequatur minus libero, aspernatur doloribus aliquam beatae provident dolorem eligendi recusandae, distinctio amet pariatur molestiae neque non, repellendus ipsam voluptatibus officiis modi hic rem nisi? Saepe.
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
     <script src="catalog/view/theme/default/js/home/vendor.js" type="text/javascript"></script>
     <script src="catalog/view/theme/default/js/home/app.js" type="text/javascript"></script>
     <script src="catalog/view/theme/default/js/home/restive.min.js" type="text/javascript"></script>
@@ -52,9 +84,16 @@
         turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet',
         force_dip: true
       });
+      $('.bxslider').bxSlider({
+            pager: false,
+            adaptiveHeight: true,
+            nextText:'<i class="fa fa-angle-right"></i>',
+            prevText:'<i class="fa fa-angle-left"></i>'
+        });
     });
   </script>
   <script src="catalog/view/theme/default/js/common.js" type="text/javascript"></script>
+  <script src="catalog/view/theme/default/js/jquery.bxslider.min.js" type="text/javascript"></script>
   <!-- Configure Restive.JS -->
   <script>
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);

@@ -3,7 +3,7 @@
   <main class="l-center content">
     <div class="col-left">
       <div class="title">
-        <span class="logo-sm"><?php echo $name;?></span>
+        <span class="logo-sm logo-style"><?php echo $name;?></span>
         <span class="action">
           <svg viewBox="0 0 150 150" class="icon icon-shine">
             <use xlink:href="catalog/view/theme/default/icons/sprite.svg#icon_shine"></use>
