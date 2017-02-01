@@ -5514,6 +5514,11 @@ textarea {
   #content.user-page #right-side {
     min-height: 600px;
   }
+  .acs-item-descr {
+    max-height: 205px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 @media only screen and (min-width: 768px) {
   .kek {
